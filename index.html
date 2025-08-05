@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boss Portfolio & CV</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Boss CV</div>
+      <ul class="nav-links">
+        <li><a href="#about">Despre</a></li>
+        <li><a href="#skills">Skill-uri</a></li>
+        <li><a href="#projects">Proiecte</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="assets/img/profile.jpg" alt="Poza profil" class="profile-pic" />
+      <h1>Sunt Bossul Tău Web 💼</h1>
+      <p>Web Developer | Freelancer | UI Designer</p>
+      <a href="assets/cv.pdf/RUSU CV Curriculum Vitae 2025.pdf" target="_blank" download class="btn-download">Descarcă CV</a>
+    </div>
+  </section>
+
+  <!-- Despre mine -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2>Despre mine</h2>
+    <p class="about-text">
+      Salut! Sunt un dezvoltator web pasionat de tehnologie și design modern. Îmi place să transform ideile în site-uri interactive, rapide și responsive.  
+      Am experiență în HTML, CSS, JavaScript și creez proiecte care ies în evidență.
+    </p>
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>📍 Locație</h3>
+        <p>România, Europa</p>
+      </div>
+      <div class="about-box">
+        <h3>💼 Experiență</h3>
+        <p>3+ ani în Web Development</p>
+      </div>
+      <div class="about-box">
+        <h3>🚀 Proiecte finalizate</h3>
+        <p>50+ template-uri și site-uri</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skill-uri -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2>Skill-uri</h2>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="skill-bar">
+        <div class="skill-fill html"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>CSS</p>
+      <div class="skill-bar">
+        <div class="skill-fill css"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="skill-bar">
+        <div class="skill-fill js"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>Design UI</p>
+      <div class="skill-bar">
+        <div class="skill-fill ui"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section id="timeline" class="timeline-section">
+  <div class="container">
+    <h2>Experiență & Educație</h2>
+    <div class="timeline">
+      
+      <div class="timeline-item">
+        <span class="date">2024 - Prezent</span>
+        <h3>Freelancer Web Developer</h3>
+        <p>Lucrez pe proiecte remote cu clienți internaționali, dezvoltând site-uri responsive și moderne.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="date">2022 - 2024</span>
+        <h3>Cursuri Front-End (HTML, CSS, JS)</h3>
+        <p>Am studiat intensiv și am construit zeci de proiecte web pentru portofoliu.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="date">2020 - 2022</span>
+        <h3>Liceu Tehnologic - Informatică</h3>
+        <p>Am pus bazele programării și designului web în perioada liceului.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Proiecte -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>Proiecte</h2>
+
+    <!-- Butoane filtru -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Toate</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="react">React</button>
+    </div>
+
+    <!-- Lista proiecte -->
+    <div class="projects-grid">
+      <div class="project-item" data-category="web">
+        <h3>Site prezentare</h3>
+        <p>Un website simplu, responsive, realizat în HTML și CSS.</p>
+      </div>
+      <div class="project-item" data-category="js">
+        <h3>Aplicație ToDo</h3>
+        <p>Aplicație JavaScript cu stocare locală și interfață modernă.</p>
+      </div>
+      <div class="project-item" data-category="react">
+        <h3>Dashboard React</h3>
+        <p>Dashboard dinamic construit cu React și API-uri externe.</p>
+      </div>
+      <div class="project-item" data-category="web">
+        <h3>Landing Page</h3>
+        <p>Landing page creat cu atenție la detalii UX/UI.</p>
+      </div>
+      <div class="project-item" data-category="js">
+        <h3>Joc browser</h3>
+        <p>Joc simplu realizat cu JavaScript și Canvas API.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoniale -->
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h2>Ce spun clienții</h2>
+
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"Colaborarea a fost excelentă, am primit un site profesionist și rapid."</p>
+        <h4>- Ana M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Serviciile oferite au depășit așteptările mele, recomand cu încredere!"</p>
+        <h4>- George P.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Foarte mulțumit de design și funcționalitate, voi reveni pentru alte proiecte."</p>
+        <h4>- Elena T.</h4>
+      </div>
+    </div>
+
+    <div class="testimonial-buttons">
+      <button id="prev-testimonial">&#10094;</button>
+      <button id="next-testimonial">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contactează-mă</h2>
+
+    <form id="contact-form" class="contact-form">
+  <label for="name">Nume:</label>
+  <input type="text" id="name" name="name" required placeholder="Numele tău">
+
+  <label for="phone">Telefon:</label>
+  <input type="tel" id="phone" name="phone" required placeholder="Număr de telefon">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required placeholder="Adresa ta de email">
+
+  <label for="message">Mesaj:</label>
+  <textarea id="message" name="message" rows="5" placeholder="Scrie mesajul tău..."></textarea>
+
+  <button type="submit">Trimite</button>
+</form>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
+    <h2>Portofoliu</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="assets/img/proiect1.jpg" alt="Proiect 1">
+        <h3>Proiect 1</h3>
+        <p>Descriere scurtă despre proiect.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/img/proiect2.jpg" alt="Proiect 2">
+        <h3>Proiect 2</h3>
+        <p>Descriere scurtă despre proiect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h2>Ce spun clienții mei</h2>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-item">
+        <p>"David a făcut o treabă excelentă cu site-ul nostru. Recomand cu încredere!"</p>
+        <h4>- Ana Popescu</h4>
+      </div>
+      <div class="testimonial-item">
+        <p>"Profesionalism și seriozitate, foarte mulțumit de colaborare."</p>
+        <h4>- Andrei Ionescu</h4>
+      </div>
+      <div class="testimonial-item">
+        <p>"Livrat la timp și peste așteptări. Voi mai colabora cu siguranță."</p>
+        <h4>- Maria Georgescu</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog-section">
+  <div class="container">
+    <h2>Ultimele articole</h2>
+    <div class="blog-grid">
+      <article class="blog-post">
+        <h3><a href="#">Titlu articol 1</a></h3>
+        <p>Un scurt rezumat al articolului, ca să atragă cititorii să dea click și să citească mai mult.</p>
+        <a href="#" class="read-more">Citește mai mult &rarr;</a>
+      </article>
+      <article class="blog-post">
+        <h3><a href="#">Titlu articol 2</a></h3>
+        <p>Un scurt rezumat al articolului, ca să atragă cititorii să dea click și să citească mai mult.</p>
+        <a href="#" class="read-more">Citește mai mult &rarr;</a>
+      </article>
+      <article class="blog-post">
+        <h3><a href="#">Titlu articol 3</a></h3>
+        <p>Un scurt rezumat al articolului, ca să atragă cititorii să dea click și să citească mai mult.</p>
+        <a href="#" class="read-more">Citește mai mult &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-nav">
+      <h3>Navigație</h3>
+      <ul>
+        <li><a href="#hero">Acasă</a></li>
+        <li><a href="#about">Despre mine</a></li>
+        <li><a href="#portfolio">Portofoliu</a></li>
+        <li><a href="#testimonials">Testimoniale</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-news">
+      <h3>Știri</h3>
+      <ul>
+        <li><a href="#">Lansare proiect nou - 01.08.2025</a></li>
+        <li><a href="#">Interviu cu client mulțumit</a></li>
+        <li><a href="#">Tips & Tricks pentru web design</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Urmărește-mă</h3>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">🔗</a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+
+    <div class="footer-map">
+      <h3>Unde mă găsești</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.986012233662!2d26.1025384154221!3d44.42676727910266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4cf15b1f6d%3A0xeba392e8c72d9df5!2sPalatul%20Parlamentului!5e0!3m2!1sro!2sro!4v1595240369027!5m2!1sro!2sro" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 David Rusu. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<button id="backToTop" title="Înapoi sus">⬆️</button>
+
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init('user_abc123'); // aici pune User ID-ul tău
+  })();
+
+  const form = document.getElementById('contact-form');
+  const messageBox = document.getElementById('form-message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_1dqy2eo', 'template_xxxxx', this)
+      .then(() => {
+        messageBox.innerHTML = "<p style='color:green;'>Mesaj trimis cu succes!</p>";
+        form.reset();
+      }, (error) => {
+        messageBox.innerHTML = "<p style='color:red;'>Eroare la trimitere. Încearcă din nou.</p>";
+        console.error('FAILED...', error);
+      });
+  });
+</script>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
